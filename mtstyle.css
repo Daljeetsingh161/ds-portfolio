@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+/* HERO WITH BACKGROUND IMAGE */
+.hero {
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  background: url('makhantailor.png') no-repeat center/cover;
+}
+
+/* DARK OVERLAY */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+/* TEXT ABOVE OVERLAY */
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+}
+
+.hero-text p {
+  font-size: 18px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* ABOUT */
+.about {
+  padding: 40px;
+  background: white;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-img img {
+  width: 180px;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 400px;
+}
+
+/* SERVICES */
+.services {
+  text-align: center;
+  padding: 40px;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+.contact {
+  padding: 40px;
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+}
+
+.contact-box {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
